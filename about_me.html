@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница о себе">
+    <title>О себе</title>
+    <link rel="stylesheet" type="text/css" href="css/styles_about_me.css">
+    <script src="js/script_about_me.js" defer></script> <!-- Подключение JavaScript файла -->
+</head>
+<body>
+<h1>О себе</h1>
+<nav>
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about_me.html">О себе</a></li>
+        <li><a href="my_hobbies.html">Мои увлечения</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+</nav>
+
+<p>Меня зовут Андрей. Я тот самый студент, который, появляется только под начало сессии.</p>
+<p>Я увлекаюсь разработкой на Java и сном. В свободное время люблю посидеть и повдуплять в стену.</p>
+<p>Моя цель - стать доллоровым миллиардером. Я стремлюсь к самопознанию.</p>
+<p>Если вы хотите узнать больше, не стесняйтесь обращаться ко мне через раздел "Контакты".</p>
+
+<div class="slider">
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <div class="slides">
+        <div class="slide"><img src="images/5ad106f139d49817ab1befe0.jpg" alt="Фото 1"></div>
+        <div class="slide"><img src="images/2017_01_27_667_480_jpg_5_100.jpg" alt="Фото 2"></div>
+        <div class="slide"><img src="images/students3.jpg" alt="Фото 3"></div>
+        <div class="slide"><img src="images/zfn3aypcsrypoxl183wgmqzjl7knxtsc.png" alt="Видео 1"></div>
+        <!-- Добавьте больше слайдов по мере необходимости -->
+    </div>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<div class="video-slider">
+    <button class="prev" onclick="changeVideoSlide(-1)">&#10094;</button>
+    <div class="video-slides">
+        <div class="video-slide">
+            <video controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        <div class="video-slide">
+            <video controls>
+                <source src="videos/video2.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        <div class="video-slide">
+            <video controls>
+                <source src="videos/веселые%20родители%20и%20их%20симпатичная%20дочь-подросток%20радостно%20идут%20по%20проходу%20в%20аэропорту%20с%20чемоданами_preview.mp4"
+                        type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        <div class="video-slide">
+            <video controls>
+                <source src="videos/современный%20поезд%20на%20рельсах%20в%20сельской%20местности_preview.mp4"
+                        type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        <!-- Добавьте больше видео по мере необходимости -->
+    </div>
+    <button class="next" onclick="changeVideoSlide(1)">&#10095;</button>
+</div>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about_me.html">О себе</a></li>
+            <li><a href="my_hobbies.html">Мои увлечения</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <p>© 2024. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
